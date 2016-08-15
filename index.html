@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>イルミネーション表示画面</title>
+</head>
+<body>
+    <input type="number" id="deviceId" value="0" max="9" min="0" />
+    <script>
+        //document.body.style.backgroundColor = "#" + str;
+        var uri = "ws://socketilum.herokuapp.com";
+        webSocket = new WebSocket(uri);
+        // イベントハンドラの設定
+        webSocket.onopen = function () {
+            console.log("onopen");
+        };
+        webSocket.onmessage = function (e) {
+            console.log("onmessage", e);
+        };
+        webSocket.onclose = function () {
+            console.log("onclose");
+        };;
+        webSocket.onerror = function () {
+            console.log("onerror");
+        };;
+    </script>
+</body>
+</html>
