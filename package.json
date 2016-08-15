@@ -1,15 +1,12 @@
 {
-  "name": "ilumination",
+  "name": "socketilum",
   "version": "0.0.1",
   "description": "This is ilumination",
   "engines": {
   },
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
-    "websocket": ">=1.0.23"
+    "websocket": ">0"
   },
   "repository": {
     "type": "git",
