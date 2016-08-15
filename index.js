@@ -64,7 +64,7 @@ wsServer.on('request', function(request) {
 
 var colors = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-var conncetionArr = [];
+var connectionArr = [];
 
 var id = 0;
 
