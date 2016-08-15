@@ -5,6 +5,9 @@
   "engines": {
   },
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "websocket": ">0"
   },
